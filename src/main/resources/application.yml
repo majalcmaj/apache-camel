@@ -1,0 +1,28 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  webflux:
+    date-format:
+server:
+  port: 6080
+camel:
+  springboot:
+    name: ServicesRest
+management:
+  port: 6081
+endpoints:
+  enabled: true
+  health:
+    enabled: true
+quickstart:
+  generateOrderPeriod: 10s
+  processOrderPeriod: 30s
+mc:
+  api:
+    path: '/camel'
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
